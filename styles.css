@@ -1,0 +1,45 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* =============================
+   1. CSS RESET
+   ============================= */
+   *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  ul li {
+    font-style: none;
+    list-style: none;
+  }
+
+   /* =============================
+   2. VARIABLES
+   ============================= */
+
+   :root {
+    --ff: "Poppins", sans-serif;
+
+    --fw-400:400;
+    --fw-600:600;
+    --fw-700:700;
+}
+
+
+   /* =============================
+   3. BASE STYLES
+   ============================= */
+
+   /* =============================
+   4. LAYOUT / COMPONENT STYLES
+   ============================= */
+
+      /* =============================
+   5. BREAKPOINT CHNAGES
+   ============================= */
