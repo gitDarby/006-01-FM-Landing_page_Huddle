@@ -10,36 +10,57 @@
     box-sizing: border-box;
   }
 
-  img {
-    width: 100%;
-  }
-
   ul li {
     font-style: none;
     list-style: none;
   }
+  img {
+    display: block;
+    max-width: 100%;
+  }
 
-   /* =============================
-   2. VARIABLES
+  button {
+    font: inherit;
+   }
+
+/* =============================
+   2. VARIABLES (Custom Properties)
    ============================= */
-
    :root {
-    --ff: "Poppins", sans-serif;
+    --ff-heading: "Poppins", sans-serif;
+    --ff-body: "Open Sans", sans-serif;
 
     --fw-400:400;
     --fw-600:600;
-    --fw-700:700;
+
+    --c-purple: #653d9a;
+    --c-magenta: #DC77E5;
+
+    --fs-heading: 2rem;
+    --fs-heading-mobile: 2rem;
+    --fs-body: 1rem;
 }
 
-
-   /* =============================
-   3. BASE STYLES
+/* =============================
+   3. BASE ELEMENT STYLES (body, img, a, ul, etc.)
    ============================= */
 
-   /* =============================
-   4. LAYOUT / COMPONENT STYLES
+/* =============================
+   4. TYPOGRAPHY (text, headings, font rules)
    ============================= */
 
-      /* =============================
-   5. BREAKPOINT CHNAGES
+/* =============================
+   5. COMPONENTS (buttons, cards, etc.)
+   ============================= */
+   
+/* =============================
+   6. LAYOUT (containers, flex/grid settings)
+   ============================= */
+
+/* =============================
+   7. UTILITIES (helper classes if any)
+   ============================= */
+
+/* =============================
+   8. MEDIA QUERIES (breakpoints)
    ============================= */
