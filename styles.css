@@ -30,7 +30,9 @@
     --ff-heading: "Poppins", sans-serif;
     --ff-body: "Open Sans", sans-serif;
 
+    --fw-300:300;
     --fw-400:400;
+    --fw-500:500;
     --fw-600:600;
 
     --c-purple: #653d9a;
@@ -44,18 +46,87 @@
 /* =============================
    3. BASE ELEMENT STYLES (body, img, a, ul, etc.)
    ============================= */
+   body {
+      background: url(./images/bg-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top;
+      background-color: #7D63A0;
+      font-family: var(--fs-body);
+      color: white;
+   }
+
+   .header-logo-img {
+      width: 13rem;
+   }
 
 /* =============================
    4. TYPOGRAPHY (text, headings, font rules)
    ============================= */
+   h1 {
+      font-family: var(--ff-heading);
+      font-weight: var(--fw-500);
+   }
+
+   p {
+      font-weight: var(--fw-300);
+      font-family: var(--ff-body);
+      font-size: var(--fs-body);
+
+   }
 
 /* =============================
    5. COMPONENTS (buttons, cards, etc.)
    ============================= */
+   button {
+      font-family: var(--ff-body);
+      color: var(--c-purple);
+      background-color: white;
+      border: none;
+      border-radius: 999px;
+      padding: .75rem 5rem;
+      cursor: pointer;
+      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.384);
+      transition: background-color .4s ease, color .4s ease;
+   }
+
+   button:hover {
+      background-color: var(--c-magenta);
+      color: white;
+   }
+
+   .social-links {
+      margin-top: 4rem;
+   }
+
+   .social-links i {
+      padding: 1rem;
+      border: 1px solid white;
+      border-radius: 999px;
+   }
+
+   .social-links > *:nth-child(1) {
+      padding: 1rem 1.25rem;
+   }
+
+   .social-links > *:nth-child(2) {
+      margin: 0 .75rem;
+   }
    
 /* =============================
    6. LAYOUT (containers, flex/grid settings)
    ============================= */
+   .container {
+      display: flex;
+      flex-direction: column;
+      height: 100dvh;
+      padding: 1.5rem;
+   }
+
+   .header-container {
+      display: flex;
+      justify-content: start;
+   }
 
 /* =============================
    7. UTILITIES (helper classes if any)
